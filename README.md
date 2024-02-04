@@ -17,7 +17,7 @@ Then simply run the main class file.
 
 > java Main
 
-Disclaimed: I forgot how I did the GUI and I'm too lazy to check.
+Disclaimer: I forgot how I did the GUI and I'm too lazy to check.
 
 It worked on Ubuntu Linux.
 
