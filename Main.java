@@ -71,8 +71,6 @@ class MyCanvas extends Canvas implements MouseListener
         int y = e.getY();
         int i = y/40;
         int j = x/40;
-        //System.out.println("x: "+x+" y:"+y);
-        //System.out.println("Clicked "+ Main.tiles[i][j]);
         if (!Main.activeTiles.contains(Main.tiles[i][j]) && Main.tiles[i][j].color != Main.tiles[0][0].color)
             findNeighbors(Main.tiles[i][j], Main.tiles[i][j].color);
     }
@@ -83,11 +81,8 @@ class MyCanvas extends Canvas implements MouseListener
             findNeighborsRecurse(tile, color, neighbors);
         }
         Main.activeTiles.addAll(neighbors);    
-        //System.out.println("i got "+neighbors.size()+" nieghbors and "+Main.activeTiles.size()+" active ones");
         for(Tile tile : Main.activeTiles){
-            //System.out.println(tile);
             tile.color = color;
-            //System.out.println("Trenutna barva je :" + color);
             this.repaint();
         }
     }
