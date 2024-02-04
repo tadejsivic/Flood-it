@@ -23,3 +23,5 @@ It worked on Ubuntu Linux.
 
 Feel free to dissect the awful code.
 
+# Collaborators
+[@spehic](https://github.com/Spehic)
